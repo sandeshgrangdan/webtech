@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login form</title>
+</head>
+<body>
+	<form  action="" method="post" name = "login" onsubmit="return validate_loging_form()">
+						
+									 <input type="text" placeholder="insert email" name="username" id="username">
+								
+								
+									 <input  type="password" placeholder="insert  password" name="password" id="password">
+
+								     <input  type="password" placeholder="retype  password" name="retype">
+
+								     <input type="text" name="email"><br><br>
+		<label>Country</label>:
+		<select  for="country" id="country">
+			<option value="" disabled selected="">Select Country</option>
+			<option>Nepal</option>
+			<option>Canada</option>
+			<option>England</option>
+		</select>
+		<br>
+		<label>Gender</label>
+		 	<input type="radio" name="gender" value="male"><label>Male</label>
+		 	<input type="radio" name="gender" value="female"><label>Female</label><br>
+		 <label>Course</label>
+		 	<input type="checkbox" name="course" value="Math"><label>Math</label>
+		 	<input type="checkbox" name="course" value="English"><label>English</label>
+		 	<input type="checkbox" name="course" value="Nepali"><label>Nepali</label>
+		 	<br>
+											
+												<input type="submit"   name="submitlogin">
+											
+								
+			
+						
+    </form>
+    <p id="message"></p>
+
+					 <script type="text/javascript" src="js/form.js"></script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+.a{
+
+	width: 100px;
+	background-color: #0f0;
+	height: 100px;
+	padding: 20px;
+	border: 10px solid #00aaaa;
+	margin: 100px ;
+}
+.menu{
+	color: #567766;
+	text-decoration: none;
+	background-color: #123777;
+	padding: 10px;
+}
+.menu:hover{
+	color: #aff;
+	text-decoration: none;
+	background-color: #ffaaaa;
+	padding: 10px;
+}

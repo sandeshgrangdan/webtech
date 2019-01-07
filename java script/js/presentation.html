@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<select id="color" onchange="setcolorcookie()">
+		<option value="select color">Setect Color</option>
+		<option value="red">Red</option>
+		<option value="Blue">Blue</option>
+	</select>
+	<script type="text/javascript">
+		function setcolorcookie(){
+			var selectedcolor = document.getElementById("color").value;
+			if(selectedcolor != "select color"){
+				document.bgcolor = selectedcolor;
+				document.cookie =  “name =" + selectedcolor + "; expires = fri, Aug 2016 01:00:00 UTC; ”;
+
+			}
+		}
+		window.onload = function(){
+			var namevaluearray = document.cookie.split("=");
+			document.bgcolor = namevaluearray[1];
+			document.getElementById("color").value = namevaluearray[1];
+		}
+	</script>
+</body>
+</html>
